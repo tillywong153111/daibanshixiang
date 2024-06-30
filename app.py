@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    github_url = "https://raw.githubusercontent.com/tillywong153111/recordeverything/master/待办事项.md"
+    github_url = "https://github.com/tillywong153111/daibanshixiang/raw/master/daibanshixiang.md"
     response = requests.get(github_url)
 
     if response.status_code == 200:
